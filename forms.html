@@ -13,32 +13,32 @@
     <form action="">
 
         <label for="fn">Full Name:</label>
-        <input id="fn" type="text" placeholder="Enter your full name">
+        <input id="fn" type="text" placeholder="Enter your full name" maxlength="15" required>
         <br><br>
 
         <label for="email">Email Adress:</label>
-        <input id="email" type="email" placeholder="Enter your email">
+        <input id="email" type="email" placeholder="Enter your email" required>
         <br><br>
 
         <label for="pn">Phone Number:</label>
-        <input id="pn" type="number">
+        <input id="pn" type="number" required>
         <br><br>
 
-        <label for="age">Age Group:</label>
-        <input type="radio" value="Under 18" name="age"> Under 18
+        <label for="age" >Age Group:</label>
+        <input type="radio" value="Under 18" name="age" required> Under 18
         <input type="radio" value="18-30" name="age">18-30
         <input type="radio" value="30-50" name="age">30-50
         <input type="radio" value="50+" name="age">50+
         <br><br>
 
         <label for="">Gender:</label>
-        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="M" required>Male
         <input type="radio" name="gender" value="F">Female
         <input type="radio" name="gender" value="O">Other
         <br><br>
 
         <label for="">Select Your Country:</label>
-        <input list="countries" name="" id="">
+        <input list="countries" name="" id="" required>
         <datalist id="countries">
             <option value="United States"></option>
             <option value="Canada"></option>
@@ -73,17 +73,17 @@
         </fieldset>
 
         <br>
-        <label for="">Would you recommend oursite to others?</label>
-        <input type="radio" name="recommend">Yes
+        <label for="">Would you recommend our site to others?</label>
+        <input type="radio" name="recommend" required>Yes
         <input type="radio" name="recommend">No
         <br><br>
 
         <label for="">Upload a Screenshot:</label>
-        <input type="file">
+        <input type="file" required>
         <br><br>
 
         <label for="">Date of Visit:</label>
-        <input type="date">
+        <input type="date" required>
         <br><br>
 
         <input type="reset">
