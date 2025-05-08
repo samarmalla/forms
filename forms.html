@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Forms</title>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <hr>
+    <form action="">
+
+        <label for="fn">Full Name:</label>
+        <input id="fn" type="text" placeholder="Enter your full name">
+        <br><br>
+
+        <label for="email">Email Adress:</label>
+        <input id="email" type="email" placeholder="Enter your email">
+        <br><br>
+
+        <label for="pn">Phone Number:</label>
+        <input id="pn" type="number">
+        <br><br>
+
+        <label for="age">Age Group:</label>
+        <input type="radio" value="Under 18" name="age"> Under 18
+        <input type="radio" value="18-30" name="age">18-30
+        <input type="radio" value="30-50" name="age">30-50
+        <input type="radio" value="50+" name="age">50+
+        <br><br>
+
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" value="M">Male
+        <input type="radio" name="gender" value="F">Female
+        <input type="radio" name="gender" value="O">Other
+        <br><br>
+
+        <label for="">Select Your Country:</label>
+        <input list="countries" name="" id="">
+        <datalist id="countries">
+            <option value="United States"></option>
+            <option value="Canada"></option>
+            <option value="Mexico"></option>
+            <option value="Nepal"></option>
+            <option value="India"></option>
+        </datalist>
+        <br><br>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <br>
+            <label for="">What features do you like the most?</label>
+            <input type="checkbox">UI Design
+            <input type="checkbox">Content
+            <input type="checkbox">Speed
+            <input type="checkbox">Mobile Friendliness
+            <br><br>
+
+            <label for="">Rate your experience:</label>
+            <select name="" id="">
+                <option value="">Excellent</option>
+                <option value="">Good</option>
+                <option value="">Average</option>
+                <option value="">Poor</option>
+            </select>
+            <br><br>
+
+            <label for="">Comments or Suggestions:</label><br><br>
+            <textarea rows="4" name="" id="" placeholder="Your comments here!"></textarea>
+            <br><br>
+        </fieldset>
+
+        <br>
+        <label for="">Would you recommend oursite to others?</label>
+        <input type="radio" name="recommend">Yes
+        <input type="radio" name="recommend">No
+        <br><br>
+
+        <label for="">Upload a Screenshot:</label>
+        <input type="file">
+        <br><br>
+
+        <label for="">Date of Visit:</label>
+        <input type="date">
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+        <hr>
+    </form>
+
+</body>
+
+</html>
